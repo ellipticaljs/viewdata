@@ -37,7 +37,7 @@
          * @param {*} value
          * @param {string} [prop]
          */
-        put:function(value,prop){
+        set:function(value,prop){
             var viewData=getViewData();
             var isArray=Array.isArray(value);
             if(prop===undefined && !isArray) viewData=value;
@@ -48,7 +48,7 @@
             return this.constructor.get(prop);
         },
 
-        put:function(value,prop){
+        set:function(value,prop){
             return this.constructor.put(value,prop);
         }
 
